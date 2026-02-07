@@ -9,8 +9,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <Cart />
+        
         <Product />
+        <Cart />
         <WishList />
 
     </div>
