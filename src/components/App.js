@@ -11,8 +11,9 @@ const App = () => {
         {/* Do not remove the main div */}
         
         <Product />
-        <Cart />
+        
         <WishList />
+        <Cart />
 
     </div>
   )

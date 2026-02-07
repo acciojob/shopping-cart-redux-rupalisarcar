@@ -5,9 +5,15 @@ div {
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-bottom: 3px;
   color: #333;
+  margin-left:10px;
+}
+p{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #48444489;
 }
 
 .product-container {

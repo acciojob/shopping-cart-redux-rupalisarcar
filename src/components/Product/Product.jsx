@@ -18,26 +18,27 @@ const Product = () => {
   if (isLoading) return <h1>Loading...</h1>;
 
   return (
-   <div>
-  <h1>Product</h1>
-  <div className="product-container">
-    {products.map((item) => (
-      <div key={item.id} className="product-card">
-        <img src={item.image} alt={item.title} />
-        <h3>{item.title}</h3>
-        <p>₹{item.price}</p>
+    <div>
+        <h1>All Products</h1>
+        <p>All products are available to order</p>
+        <div className="product-container">
+            {products.map((item) => (
+            <div key={item.id} className="product-card">
+                <img src={item.image} alt={item.title} />
+                <h3>{item.title}</h3>
+                <p>₹{item.price}</p>
 
-        <button onClick={() => dispatch(addToCart(item))}>
-          Add to Cart
-        </button>
+                <button onClick={() => dispatch(addToCart(item))}>
+                Add to Cart
+                </button>
 
-        <button onClick={() => dispatch(toggleWishList(item))}>
-          Wishlist
-        </button>
-      </div>
-    ))}
-  </div>
-</div>
+                <button onClick={() => dispatch(toggleWishList(item))}>
+                Wishlist
+                </button>
+            </div>
+            ))}
+        </div>
+    </div>
 
   );
 };
